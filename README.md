@@ -1,41 +1,52 @@
 # **Data-Structure-Performance-Analyzer**
 
-## **Περιγραφή**
-Πρόγραμμα σε **C++** για σύγκριση απόδοσης δομών δεδομένων (Μη ταξινομημένος/ταξινομημένος πίνακας, Δυαδικό Δέντρο Αναζήτησης, AVL Tree, Πίνακας Κατακερματισμού). Μετράει χρόνους αναζήτησης σε πραγματικά δεδομένα από αρχεία κειμένου και εξάγει στατιστικά για εκπαιδευτική ανάλυση.
+## **Description**
+
+A **C++** program for comparing the performance of various data structures — **Unordered/Ordered Array**, **Binary Search Tree (BST)**, **AVL Tree**, and **Hash Table**. It measures **search times** using real text data from files and generates performance statistics for **educational analysis**.
 
 ---
 
-### 🔍 **Κύρια Χαρακτηριστικά**
-- **Εισαγωγή & Επεξεργαία Δεδομένων**:
-  - Ανάγνωση λέξεων από αρχείο κειμένου (`small-file.txt`).
-  - Καθαρισμός λέξεων (αφαίρεση μη αλφαβητικών χαρακτήρων, μετατροπή σε πεζά).
-- **Δομές Δεδομένων**:
-  - **UnorderedArray**: Απλή εισαγωγή χωρίς ταξινόμηση.
-  - **OrderedArray**: Ταξινομημένος πίνακας με QuickSort.
-  - **BinarySearchTree**: Δυαδικό Δέντρο Αναζήτησης.
-  - **AVLTree**: Ισορροπημένο δέντρο AVL.
-  - **HashTable**: Πίνακας κατακερματισμού.
-- **Μέτρηση Απόδοσης**:
-  - Χρονομέτρηση αναζήτησης τυχαίων λέξεων (χρήση `chrono`).
-  - Αποθήκευση αποτελεσμάτων σε αρχεία (`Results.txt`, `UArray.txt`, κ.λπ.).
+### 🔍 **Key Features**
+
+* **Data Input & Processing**:
+
+  * Reads words from a text file (`small-file.txt`).
+  * Cleans input by removing non-alphabetic characters and converting to lowercase.
+
+* **Data Structures Implemented**:
+
+  * **UnorderedArray**: Simple unsorted array insertion.
+  * **OrderedArray**: Sorted array using **QuickSort**.
+  * **BinarySearchTree (BST)**: Classic binary search tree.
+  * **AVLTree**: Self-balancing AVL tree.
+  * **HashTable**: Hash table implementation.
+
+* **Performance Measurement**:
+
+  * Measures search times for random words using **`chrono`**.
+  * Exports timing results to files (`Results.txt`, `UArray.txt`, etc.).
 
 ---
 
-### ⚙️ **Τεχνολογίες**
-- **C++** (STL: `fstream`, `chrono`, δυναμική διαχείριση μνήμης).
-- **Αλγόριθμοι**: QuickSort, BST/AVL operations, κατακερματισμός.
-- **Βιβλιοθήκες**: Προσαρμοσμένες υλοποιήσεις δομών (`UnorderedArray.h`, `AVLTree.h`, κ.λπ.).
+### ⚙️ **Technologies**
+
+* **C++** (STL: `fstream`, `chrono`, dynamic memory management)
+* **Algorithms**: QuickSort, BST/AVL operations, hashing
+* **Custom Libraries**: User-defined implementations (`UnorderedArray.h`, `AVLTree.h`, etc.)
 
 ---
 
-### 📝 **Σημειώσεις**
-- **Εκπαιδευτικό Πλαίσιο**: Ιδανικό για μελέτη συμπεριφοράς δομών δεδομένων υπό πραγματικά δεδομένα.
-- **Ρυθμίσεις**: Προσαρμογή μεγέθους δοκιμών (`SIZE`), πιθανότητας εισαγωγής (`PROBABILITY`), και αρχείου εισόδου (`INPUT_FILE`).
-- **Επεκτασιμότητα**: Προσθήκη νέων δομών (π.χ. B-Tree) ή μετρικών (π.χ. μνήμη).
+### 📝 **Notes**
+
+* **Educational Purpose**: Ideal for studying the behavior and efficiency of data structures on real datasets.
+* **Configuration Options**: Adjustable parameters such as `SIZE`, `PROBABILITY`, and `INPUT_FILE`.
+* **Extensibility**: Can be expanded with new structures (e.g., **B-Tree**) or metrics (e.g., **memory usage**).
 
 ---
 
 **🏷️ Tags**: `C++`, `Data Structures`, `Performance Analysis`, `Benchmarking`, `File Handling`
-**🔧 Open for Contributions**: Ανοικτό σε βελτιώσεις μέσω *Pull Requests* ή αναφοράς θεμάτων σε *Issues*.
+**🔧 Open for Contributions**: Open to improvements via *Pull Requests* or *Issues*.
 
-*"Εργαλείο ανάλυσης απόδοσης δομών δεδομένων με έμφαση στην πραγματική εφαρμογή και τη συγκριτική μελέτη."* ⏱️📈
+---
+
+*"A performance analysis tool for data structures, focusing on real-world application and comparative study."* ⏱️📈
